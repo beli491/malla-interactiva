@@ -57,3 +57,62 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     }
   <
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Ingeniería Civil Industrial - UV</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #cc6699;
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+    .semestre {
+      margin: 30px 0;
+      padding: 20px;
+      background-color: #ffe4ec;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .semestre h2 {
+      color: #cc6699;
+      margin-bottom: 15px;
+    }
+    .ramo {
+      background-color: #fcd6e7;
+      color: #333;
+      padding: 10px 14px;
+      margin: 6px;
+      border-radius: 10px;
+      display: inline-block;
+      position: relative;
+      transition: transform 0.2s;
+    }
+    .ramo:hover {
+      transform: scale(1.03);
+    }
+    .ramo:hover::after {
+      content: attr(data-dependencias);
+      position: absolute;
+      left: 0;
+      top: 100%;
+      margin-top: 8px;
+      background-color: #fff;
+      color: #000;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 8px;
+      white-space: pre-line;
+      z-index: 10;
+      width: 260px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+  <
