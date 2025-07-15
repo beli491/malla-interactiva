@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Ingeniería Civil Industrial - UV</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #cc6699;
+    }
+    .semestre {
+      margin: 20px 0;
+      padding: 10px;
+      background-color: #ffe4ec;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .semestre h2 {
+      color: #cc6699;
+    }
+    .ramo {
+      background-color: #fcd6e7;
+      color: #333;
+      padding: 10px;
+      margin: 5px;
+      border-radius: 10px;
+      display: inline-block;
+      position: relative;
+    }
+    .ramo:hover::after {
+      content: attr(data-dependencias);
+      position: absolute;
+      left: 0;
+      top: 100%;
+      margin-top: 5px;
+      background-color: #fff;
+      color: #000;
+      border: 1px solid #ccc;
+      padding: 8px;
+      border-radius: 8px;
+      white-space: pre-line;
+      z-index: 10;
+      width: 250px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Malla Ingeniería Civil Industrial</h1>
+
+  <div class="semestre">
+    <h2>Semestre 1</h2>
+    <div class="ramo" data-dependencias="Abre: Cálculo Diferencial, Álgebra">Fundamentos de Matemática</div>
+    <div class="ramo" data-dependencias="Abre: Formación General, Alfabetización Académica">Desarrollo Personal</div>
+    <div class="ramo" data-dependencias="Abre: Ingeniería, Innovación y Emprendimiento">Desafíos de Ingeniería</div>
+    <div class="ramo" data-dependencias="Abre: Programación">Fundamentos de Programación</div>
+    <div class="ramo" data-dependencias="Abre: Termodinámica, Análisis de Materiales">Química para Ingeniería</div>
+  </div>
+
+  <!-- Semestre 2 al 11 seguirán con este mismo formato -->
+
+</body>
+</html>
